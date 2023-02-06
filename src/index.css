@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-[67.34px] leading-none;
+  }
+
+  h2 {
+    @apply text-[50.52px] leading-none;
+  }
+
+  h3 {
+    @apply text-[37.90px] leading-none;
+  }
+
+  h4 {
+    @apply text-[28.43px] leading-none;
+  }
+
+  h5 {
+    @apply text-[21.33px] leading-none;
+  }
+
+  li {
+    @apply text-[21.33px] leading-none;
+  }
+}
