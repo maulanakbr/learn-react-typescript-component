@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { UserContext } from "./UserContext";
 
-export const User: React.FC = () => {
+export const User = () => {
   const userContext = useContext(UserContext);
 
   const handleLogin = () => {

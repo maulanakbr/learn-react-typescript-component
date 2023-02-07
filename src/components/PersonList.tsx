@@ -4,9 +4,7 @@ type PersonListProps = {
   names: Name[];
 };
 
-export const PersonList: React.FC<PersonListProps> = ({
-  names,
-}: PersonListProps) => {
+export const PersonList = ({ names }: PersonListProps) => {
   return (
     <div className="mb-2">
       <ul>

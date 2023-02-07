@@ -1,13 +1,13 @@
-import { createContext } from "react";
+import { ReactNode, createContext } from "react";
 import { theme } from "./theme";
 
 type ThemeContextProvideProps = {
-  children: React.ReactNode;
+  children: ReactNode;
 };
 
 export const ThemeContext = createContext(theme);
 
-export const ThemeContextProvider: React.FC<ThemeContextProvideProps> = ({
+export const ThemeContextProvider = ({
   children,
 }: ThemeContextProvideProps) => {
   return (

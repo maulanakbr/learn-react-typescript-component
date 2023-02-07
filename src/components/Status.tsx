@@ -2,7 +2,7 @@ type StatusProps = {
   status: "loading" | "success" | "error";
 };
 
-export const Status: React.FC<StatusProps> = ({ status }: StatusProps) => {
+export const Status = ({ status }: StatusProps) => {
   let message: string | undefined;
 
   if (status === "loading") {

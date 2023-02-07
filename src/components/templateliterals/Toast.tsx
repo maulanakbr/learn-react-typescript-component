@@ -8,7 +8,7 @@ type ToastProps = {
     | "center";
 };
 
-export const Toast: React.FC<ToastProps> = ({ position }: ToastProps) => {
+export const Toast = ({ position }: ToastProps) => {
   return (
     <div className="flex justify-center">
       Toast Notification Position - {position}

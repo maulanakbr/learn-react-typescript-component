@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-export const DomRef: React.FC = () => {
+export const DomRef = () => {
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {

@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { ReactNode, createContext, useState } from "react";
 
 export type AuthUser = {
   name: string;
@@ -11,14 +11,12 @@ type UserContextType = {
 };
 
 type UserContextProviderProps = {
-  children: React.ReactNode;
+  children: ReactNode;
 };
 
 export const UserContext = createContext({} as UserContextType);
 
-export const UserContextProvider: React.FC<UserContextProviderProps> = ({
-  children,
-}: UserContextProviderProps) => {
+export const UserContextProvider = ({ children }: UserContextProviderProps) => {
   const [user, setUser] = useState<AuthUser | null>(null);
 
   return (

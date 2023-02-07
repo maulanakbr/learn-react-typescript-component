@@ -1,10 +1,10 @@
+import { CSSProperties } from "react";
+
 type ContainerProps = {
-  styles: React.CSSProperties;
+  styles: CSSProperties;
 };
 
-export const Container: React.FC<ContainerProps> = ({
-  styles,
-}: ContainerProps) => {
+export const Container = ({ styles }: ContainerProps) => {
   return (
     <div className="mb-2 flex items-center justify-center">
       <div style={styles}>Text content goes here</div>

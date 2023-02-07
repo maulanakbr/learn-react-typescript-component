@@ -1,10 +1,12 @@
+import { ChangeEvent } from "react";
+
 type InputProps = {
   value: string;
-  handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  handleChange: (event: ChangeEvent<HTMLInputElement>) => void;
 };
 
-export const Input: React.FC<InputProps> = ({ value }: InputProps) => {
-  const handleInputChange = (event: React.ChangeEvent<HTMLElement>) => {
+export const Input = ({ value }: InputProps) => {
+  const handleInputChange = (event: ChangeEvent<HTMLElement>) => {
     console.log(event);
   };
 

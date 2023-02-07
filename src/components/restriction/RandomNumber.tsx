@@ -22,7 +22,7 @@ type Zero = RandomNumberType & {
 
 type RandomNumberProps = PositiveNumber | NegativeNumber | Zero;
 
-export const RandomNumber: React.FC<RandomNumberProps> = ({
+export const RandomNumber = ({
   value,
   isPositive,
   isNegative,

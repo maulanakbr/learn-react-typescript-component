@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { ThemeContext } from "./ThemeContext";
 
-export const Box: React.FC = () => {
+export const Box = () => {
   const [toggleTheme, setToggleTheme] = useState(false);
   const theme = useContext(ThemeContext);
 

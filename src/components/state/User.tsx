@@ -5,7 +5,7 @@ type AuthUser = {
   email: string;
 };
 
-export const User: React.FC = () => {
+export const User = () => {
   //   const [user, setUser] = useState<AuthUser | null>(null);
   const [user, setUser] = useState<AuthUser>({} as AuthUser);
 

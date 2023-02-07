@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-export const MutableRef: React.FC = () => {
+export const MutableRef = () => {
   const [timer, setTimer] = useState(0);
   const intervalRef = useRef<number | null>(null);
 

@@ -1,8 +1,10 @@
+import { MouseEvent } from "react";
+
 type ButtonProps = {
-  handleClick: (event: React.MouseEvent<HTMLButtonElement>, id: number) => void;
+  handleClick: (event: MouseEvent<HTMLButtonElement>, id: number) => void;
 };
 
-export const Button: React.FC<ButtonProps> = ({ handleClick }: ButtonProps) => {
+export const Button = ({ handleClick }: ButtonProps) => {
   return (
     <div className="mb-2 flex justify-center">
       <button

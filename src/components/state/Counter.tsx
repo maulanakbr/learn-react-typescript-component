@@ -30,7 +30,7 @@ function reducer(state: CounterState, action: CounterAction) {
   }
 }
 
-export const Counter: React.FC = () => {
+export const Counter = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
