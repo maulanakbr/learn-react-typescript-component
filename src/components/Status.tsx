@@ -2,14 +2,14 @@ type StatusProps = {
   status: "loading" | "success" | "error";
 };
 
-export const Status = ({ status }: StatusProps) => {
+export const Status: React.FC<StatusProps> = ({ status }: StatusProps) => {
   let message: string | undefined;
 
   if (status === "loading") {
     message = "Loading";
   } else if (status === "success") {
     message = "Your data is fetched succesfully";
-  } else if (status == "error") {
+  } else if (status === "error") {
     message = "There is an error! Please come back later";
   }
 

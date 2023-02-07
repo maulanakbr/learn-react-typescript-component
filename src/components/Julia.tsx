@@ -2,6 +2,6 @@ type JuliaProps = {
   children: React.ReactNode;
 };
 
-export const Julia = ({ children }: JuliaProps) => {
+export const Julia: React.FC<JuliaProps> = ({ children }: JuliaProps) => {
   return <div>{children}</div>;
 };

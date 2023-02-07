@@ -2,7 +2,7 @@ type ButtonProps = {
   handleClick: (event: React.MouseEvent<HTMLButtonElement>, id: number) => void;
 };
 
-export const Button = ({ handleClick }: ButtonProps) => {
+export const Button: React.FC<ButtonProps> = ({ handleClick }: ButtonProps) => {
   return (
     <div className="mb-2 flex justify-center">
       <button

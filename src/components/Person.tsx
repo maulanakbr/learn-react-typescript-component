@@ -1,11 +1,6 @@
-type PersonProps = {
-  name: {
-    first: string;
-    last: string;
-  };
-};
+import { PersonProps } from "./Person.types";
 
-export const Person = ({ name }: PersonProps) => {
+export const Person: React.FC<PersonProps> = ({ name }: PersonProps) => {
   return (
     <div className="mb-2">
       <h3 className="text-center">

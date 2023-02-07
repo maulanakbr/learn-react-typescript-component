@@ -4,7 +4,11 @@ type GreetProps = {
   isLoggedIn: boolean;
 };
 
-export const Greet = ({ name, messageCount = 0, isLoggedIn }: GreetProps) => {
+export const Greet: React.FC<GreetProps> = ({
+  name,
+  messageCount = 0,
+  isLoggedIn,
+}: GreetProps) => {
   return (
     <div className="mb-2">
       <h4 className="text-center">
